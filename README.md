@@ -66,6 +66,78 @@ content/
   bumpers/    ← Transitions, interstitials (optional)
 ```
 
+## Content Plan
+
+### 1. Internet Archive (primary source)
+
+The goldmine. Long runtimes, analog artifacts already baked in, weird pacing.
+
+Use `harvest_archive.sh` with these search terms:
+
+```
+public access television
+vhs rip
+educational film 1980
+training video
+local news 1990
+instructional film
+home video 1980s
+beta max recording
+```
+
+Everything goes into `content/main/`.
+
+### 2. YouTube harvests (process before use)
+
+Use `harvest_youtube.sh`, then run through `degrade.sh` before moving to `content/glitch/`.
+
+Good search targets:
+
+```
+VHS compilation
+analog glitch art
+CRT footage
+old commercials compilation
+broadcast failure
+public access clip
+```
+
+### 3. Locally generated glitch content
+
+You don't need to find glitch content — you can manufacture it infinitely.
+
+Run anything from `main/` through `degrade.sh` at intensity 3-5:
+
+```bash
+./scripts/degrade.sh content/main/some_film.mp4 content/glitch/some_film_destroyed.mp4 4
+```
+
+Useful variants to generate deliberately:
+- Drop frames (intensity 3+)
+- Color channel shifts
+- Multi-pass MPEG2 re-encodes (intensity 4-5)
+- Crop accidents
+
+### 4. Dead air (generated)
+
+Underrated and important — gives the station breathing room and sells the "real channel" feel.
+
+```bash
+./scripts/make_dead_air.sh
+```
+
+Generates: black with noise, SMPTE color bars, snowstorm static, blue screen.
+
+### 5. Station idents (generated)
+
+2–5 second clips that make it feel like a real station. Cheap to make, high impact.
+
+```bash
+./scripts/make_ident.sh
+```
+
+Edit `STATION_NAME` and `TAGLINES` in the script to customize. Generate 10+ variants — slight timing differences make them feel organic.
+
 ## Outputs
 
 ### Local HDMI Display
