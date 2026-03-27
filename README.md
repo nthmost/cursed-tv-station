@@ -72,20 +72,126 @@ content/
 
 The goldmine. Long runtimes, analog artifacts already baked in, weird pacing.
 
-Use `harvest_archive.sh` with these search terms:
+Use `harvest_archive.sh` with the search clusters below. Everything goes into `content/main/`.
+
+---
+
+**Institutional / training media** ← top tier
+
+Authoritative tone delivering outdated content. Slow pacing. Analog artifacts. Feels like the system explaining itself incorrectly.
+
+```
+educational film 1970
+training film 1980
+industrial training video
+corporate training VHS
+instructional film
+```
+
+---
+
+**Public access / local broadcast**
+
+Low-budget sincerity, unpredictable structure, strange personalities. Feels like reality leaking through infrastructure.
 
 ```
 public access television
-vhs rip
-educational film 1980
-training video
-local news 1990
-instructional film
-home video 1980s
-beta max recording
+community television 1990
+local news broadcast VHS
+access channel program
 ```
 
-Everything goes into `content/main/`.
+---
+
+**VHS / tape culture**
+
+Tracking errors, color bleed, time distortion. Feels like memory, but unstable.
+
+```
+VHS recording
+home video VHS 1980
+VHS compilation
+tape transfer
+```
+
+---
+
+**Commercials** ← surprisingly powerful
+
+Short segments (great for idents and interstitials), high-energy contrast, weird cultural assumptions baked in. Feels like ritualized persuasion fragments.
+
+```
+commercial compilation 1980
+TV ads 1990
+local commercials
+public service announcement PSA
+```
+
+---
+
+**Technical / scientific media**
+
+Visual abstractions, diagrams with narration, early CG weirdness. Feels like machines trying to describe themselves.
+
+```
+NASA educational film
+computer training 1980
+early computer graphics demo
+signal processing demonstration
+```
+
+---
+
+**New age / fringe / esoteric**
+
+Slow pacing, uncanny tone, often already glitch-adjacent before you touch it. Feels like someone trying to tune the signal.
+
+```
+new age VHS
+meditation video 1980
+self improvement tape
+hypnosis session recording
+```
+
+---
+
+**Fitness / instruction**
+
+Repetitive motion, bright colors, strong visual rhythm. Surprisingly hypnotic in a rotation context. Feels like bodies syncing to broadcast.
+
+```
+aerobics 1980
+exercise VHS
+workout tape
+dance instruction video
+```
+
+---
+
+**Government / civic media**
+
+Authoritative but slightly off. Often unintentionally eerie. Feels like systems maintaining themselves.
+
+```
+public information film
+government training video
+civil defense film
+safety training VHS
+```
+
+---
+
+**High-signal weird pulls**
+
+Less obvious but often gold. These frequently produce accidental glitch, feedback loops, and broken structure — use in `glitch/` or run through `degrade.sh` first.
+
+```
+access television call in
+video feedback experiment
+broadcast failure
+signal interference
+UHF television recording
+```
 
 ### 2. YouTube harvests (process before use)
 
